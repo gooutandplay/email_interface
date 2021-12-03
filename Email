@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Email Accounts
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div>
+                <span>
+                    <button class="button button1" onclick="window.open('categories.html')">
+                      🖥
+                    </button>
+                    <br>
+                    <h2>WORK</h2>
+                    <p>
+                    idontwnattowork@yahoo.com
+                    </p>
+                </span>
+                <span>
+                    <button class="button button2" onclick="window.open('categories.html')">
+                      🔐
+                    </button>
+                    <br>
+                    <h2>PERSONAL</h2>
+                    <p>
+                    gooutandplaybro@gmail.com
+                    </p>
+                </span>
+                <span>
+                    <button class="button button3" onclick="window.open('categories.html')">
+                      🗞 
+                    </button>
+                    <br>
+                    <h2>JUNK</h2>
+                    <p>
+                    wastegoeshere@email.com
+                    </p>
+                </span>
+                <span></span>
+            </div>
+        </div>
+    </body>
+</html>
