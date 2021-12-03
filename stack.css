@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*:root{
+    --black: #46494c;
+    --gray :#c5c3c6;
+    --white: #dcdcdd;
+    --dBlue: #1d3557;
+} */
+a{text-decoration: none;}
+body{
+    background:#ff9900;
+}
+.body-container-1{
+    max-width:500px;
+    margin:0 auto;
+    margin-top: 250px;
+    padding:0 20px;
+}
+.cards-wrapper{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+.card-container{
+    background:#dcdcdd;
+    min-height: calc(100vh - 500px);
+    position: absolute;
+    width:100%;
+    bottom:999px;
+    left: 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    border-radius:5px;
+}
+
+.card-header{
+    border-radius:5px 5px 0 0;
+    background:#c5c3c6;
+    display:grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.card-header .tab .tab-button1{
+    width: 70px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dcdcdd;
+    border-bottom: none;
+    font-size: 12px;
+    color: #D1495B;
+    cursor: pointer;
+}
+.tab-button1:after{
+    content: "READ";
+}
+
+.active:after {
+    content: "CLOSE";
+}
+
+.active, .card-header .tab .tab-button1:hover{
+    background-color: #D1495B;
+    border-bottom: none;
+    color: white;
+}
+.card-header .tab .tab-button2{
+    width: 70px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dcdcdd;
+    border-bottom: none;
+    font-size: 12px;
+    color: #30638E;
+    cursor: pointer;
+}
+.card-header .tab .tab-button2:hover{
+    background-color: #30638E;
+    border-bottom: none;
+    color: white;
+}
+.card-header .tab-button3 {
+    width: 70px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #dcdcdd;
+    border-bottom: none;
+    font-size: 12px;
+    color: #EDAE49;
+    cursor: pointer;   
+}
+
+.card-header .tab .tab-button3:hover{
+    background-color: #EDAE49;
+    border-bottom: none;
+    color: white;
+}
+
+.card-content{
+    padding:20px 20px 0;
+    overflow: hidden;
+}
+.card-content p{
+    font-size:.8rem;
+    line-height:1.6;
+    text-align: left;
+}
+.card-content .card-next{
+    padding:10px 20px;
+    display: inline-block;
+    background:#1d3557;
+    margin-top:20px;
+    border-radius: 3px;
+    color:#c5c3c6;
+    font-weight: 700;
+}
+
+.card-content .emailContent{
+    margin-top: 20px;
+    padding: 18px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.card-close{
+    color:black;
+}
+
+.cards{
+    transition: left 400ms ease-in-out, width 400ms ease-in-out, top 400ms ease-in-out;
+}
+
+
+.tab-button3:after{
+    content: "REPLY";
+}
+
+.active:after {
+    content: "CLOSE";
+}
+
+.textbox{
+    margin-top: 20px;
+    padding: 18px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#fname{
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
+}
+
+#fname:focus {
+    height: 200px;
+    width: 400px;
+  }
